@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Week3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_increment_text">INCREMENT</string>
+    <string name="btn_decrement_text">DECREMENT</string>
+    <string name="et_name_hint">Enter Your Name</string>
+</resources>
