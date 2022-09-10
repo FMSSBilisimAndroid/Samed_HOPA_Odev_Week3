@@ -29,6 +29,14 @@ class HomeFragment : Fragment() {
         Log.v("PATIKADEV","onCreate called.")
     }
 
+    /**
+     * dataBinding tanımlandı.
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return fragmentHomeBinding.root
+     */
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,6 +46,12 @@ class HomeFragment : Fragment() {
         return fragmentHomeBinding.root
     }
 
+    /**
+     * Butonlara tıklandığında fonksiyonlara yönlendirildi.
+     *
+     * @param view
+     * @param savedInstanceState
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.v("PATIKADEV","onViewCreated called.")
@@ -54,6 +68,11 @@ class HomeFragment : Fragment() {
         displayCounter()
     }
 
+    /**
+     * savedInstanceState ile tutulan değer countValue'ye atandı.
+     *
+     * @param savedInstanceState
+     */
     override fun onViewStateRestored(savedInstanceState: Bundle?) {
         super.onViewStateRestored(savedInstanceState)
         Log.v("PATIKADEV","onViewStateRestored called.")
@@ -84,6 +103,11 @@ class HomeFragment : Fragment() {
         Log.v("PATIKADEV","onStop called.")
     }
 
+    /**
+     * Program pause olduğunda countValue'yi SCORE_KEY olarak koruyoruz.
+     *
+     * @param outState
+     */
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         Log.v("PATIKADEV","onSaveInstanceState called.")
@@ -106,17 +130,28 @@ class HomeFragment : Fragment() {
         Log.v("PATIKADEV","onDetach called.")
     }
 
+    /**
+     * countValue'ye bir arttırıyoruz.
+     *
+     */
     private fun incrementCounter() {
         countValue+=1
         displayCounter()
     }
 
-
+    /**
+     * countValue'ye bir azaltıyoruz.
+     *
+     */
     private fun decrementCounter() {
         countValue-=1
         displayCounter()
     }
 
+    /**
+     * counterTextView.text'e countValue.toString() eşitliyoruz.
+     * uygulamamzıda gösterebiliyoruz.
+     */
     private fun displayCounter() {
         counterTextView.text = countValue.toString()
     }
