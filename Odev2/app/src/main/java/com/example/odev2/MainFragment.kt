@@ -20,6 +20,12 @@ class MainFragment : Fragment() {
         return fragmentMainBinding.root
     }
 
+    /**
+     * backButton tıklandığında navigeUp yapıyoruz.
+     *
+     * @param view
+     * @param savedInstanceState
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         fragmentMainBinding.apply {
