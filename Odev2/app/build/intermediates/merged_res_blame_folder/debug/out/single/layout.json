@@ -4,11 +4,7 @@
         "source": "com.example.odev2.app-main-49:/layout/fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\samet\\.gradle\\daemon\\7.3.3\\com.example.odev2.app-mergeDebugResources-46:\\layout\\fragment_login.xml",
-        "source": "C:\\Users\\samet\\.gradle\\daemon\\7.3.3\\com.example.odev2.app-main-49:\\layout\\fragment_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\samet\\.gradle\\daemon\\7.3.3\\com.example.odev2.app-mergeDebugResources-46:\\layout\\fragment_main.xml",
-        "source": "C:\\Users\\samet\\.gradle\\daemon\\7.3.3\\com.example.odev2.app-main-49:\\layout\\fragment_main.xml"
+        "merged": "com.example.odev2.app-mergeDebugResources-46:/layout/fragment_main.xml",
+        "source": "com.example.odev2.app-main-49:/layout/fragment_main.xml"
     }
 ]
